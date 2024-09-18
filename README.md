@@ -17,11 +17,5 @@ CSS Custom Properties & Responsive Design: Discover how to use relative units, F
 JavaScript Logic & Error Handling: Work on real-world scenarios that challenge your problem-solving and implementation skills.
 Submit a pull request to participate, share your solutions, and get feedback! It’s a great way to learn, improve, and collaborate with others.
 
-### Built it with
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-
 this way you can get to learn a lot of the fundamentals and also level up you skills. However if you feel you have a better approach, using React.JS, tailwindCSS or SCSS with any other Javascript library, then feel free to complete the challenge.
 
