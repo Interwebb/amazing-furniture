@@ -7,6 +7,11 @@
 ![Desktop Screens Solution](images/amazing.png)
 
 ### Join the Challenge!
+- clone the repo with `git clone`
+
+- create a branch in the format `solution/[username]` so that its easy to identify
+
+-  
 
 This project gave me the opportunity to dive deeper into JavaScript, particularly when it came to handling logic, implementing solutions, and custom error handling. It was a challenge at first, but with practice, it's getting better every day. Now, I want to extend this learning experience to the community.
 
