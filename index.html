@@ -6,23 +6,37 @@
     <title>Amazing Furniture</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="./app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/837ddc8d45.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
   </head>
   <body>
     <main>
-      <header>
-        <nav class="nav">
-          <div>
+      <header class="">
+        <nav class="container flex">
+          <div class="flex">
+            <button id="menu" class="menu-button">
+              <span class="bar bar__1"></span>
+              <span class="bar bar__2"></span>
+              <span class="bar bar__3"></span>
+            </button>
             <img src="./logo.png" alt="my logo" />
           </div>
 
-          <ul>
+          <ul class="menu-links menu-links__mobile">
             <li>
               <a href="#home">Home</a>
+            </li>
+            <li>
               <a href="#home">Shop</a>
+            </li>
+            <li>
               <a href="#home">About</a>
             </li>
           </ul>
-          <aside>
+          <aside class="CTA">
             <button>Shop</button>
           </aside>
         </nav>
