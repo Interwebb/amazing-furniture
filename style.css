@@ -1,0 +1,222 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  /* / */
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 0.5rem;
+}
+
+.menu-links {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: medium;
+  color: black;
+}
+
+.menu-links li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.menu-links li:hover {
+  cursor: pointer;
+  background-color: rgb(138, 14, 14);
+  color: white;
+}
+
+.menu-links li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+header {
+  width: 100vw;
+  /* background-color: blue; */
+  position: relative;
+}
+.menu-links li:nth-child(2) {
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: black;
+  border-radius: 1px;
+  margin-block: 0.2rem;
+}
+
+nav > div {
+  /* background-color: green; */
+}
+
+nav aside > button {
+  background-color: black !important;
+  border: none;
+  color: white;
+  border-radius: 1rem;
+  padding-inline: 1.5rem;
+  padding-block: 0.5rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.menu-button {
+  display: none;
+  width: 40px;
+  aspect-ratio: 1;
+  align-self: flex-start;
+  scale: 0.6;
+
+  margin-right: 12px;
+}
+
+/* MAX WIDTH QUERY => IF WIDTH EXCEEDS THEN DONT APPLY THE QUERY */
+@media (max-width: 768px) {
+  .container {
+    /* background-color: red; */
+  }
+
+  .menu-button {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .menu-links {
+    display: none;
+  }
+
+  .menu-links {
+    /* TODO: RO BE HIDDEN */
+    position: absolute;
+    top: 100%;
+    min-width: 200px;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .menu-links__mobile {
+    background-color: rgb(0, 0, 0);
+    padding-inline: 1rem;
+    border-radius: 0.5rem;
+    padding-block: 1rem;
+  }
+
+  .menu-links__mobile li {
+    border-radius: 4px;
+    padding-bottom: 1rem;
+    padding-inline: 0.5rem;
+    border-bottom: 1px solid white;
+  }
+
+  .menu-links__mobile li a {
+    color: aliceblue;
+  }
+}
+
+@media (max-width: 480px) {
+  .CTA {
+    display: none;
+  }
+}
+
+/* MAX WIDTH QUERY => IF WIDTH EXCEEDS THEN  APPLY THE QUERY */
+/* @media (min-width: 768px) {
+  .container {
+    background-color: blue;
+  }
+} */
+
+.flex {
+  display: flex;
+}
