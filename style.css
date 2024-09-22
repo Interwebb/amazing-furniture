@@ -157,6 +157,19 @@ nav aside > button {
   margin-right: 12px;
 }
 
+.text-content {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 20svh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* MAX WIDTH QUERY => IF WIDTH EXCEEDS THEN DONT APPLY THE QUERY */
 @media (max-width: 768px) {
   /* .container {
