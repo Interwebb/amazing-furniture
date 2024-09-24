@@ -119,8 +119,6 @@ header {
   /* background-color: blue; */
   position: relative;
 }
-.menu-links li:nth-child(2) {
-}
 
 .bar {
   width: 100%;
@@ -130,9 +128,9 @@ header {
   margin-block: 0.2rem;
 }
 
-nav > div {
+/* nav > div { */
   /* background-color: green; */
-}
+/* } */
 
 nav aside > button {
   background-color: black !important;
@@ -159,11 +157,24 @@ nav aside > button {
   margin-right: 12px;
 }
 
+.text-content {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+section {
+  margin-top: 20svh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* MAX WIDTH QUERY => IF WIDTH EXCEEDS THEN DONT APPLY THE QUERY */
 @media (max-width: 768px) {
-  .container {
+  /* .container {
     /* background-color: red; */
-  }
+  /* } */
 
   .menu-button {
     display: flex;
