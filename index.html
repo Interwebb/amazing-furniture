@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amazing Furniture</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="./app.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <header class="">
-        <nav class="container flex">
-          <div class="flex">
-            <button id="menu" class="menu-button">
-              <span class="bar bar__1"></span>
-              <span class="bar bar__2"></span>
-              <span class="bar bar__3"></span>
-            </button>
-            <img src="./logo.png" alt="my logo" />
-          </div>
 
-          <ul class="menu-links menu-links__mobile">
-            <li>
-              <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#home">Shop</a>
-            </li>
-            <li>
-              <a href="#home">About</a>
-            </li>
-          </ul>
-          <aside class="CTA">
-            <button>Shop</button>
-          </aside>
-        </nav>
-      </header>
-      <section>
-        <div>
-          <p class="text_content">Amazing</p>
-          <p class="text_content">Furniture you</p>
-          <p class="text_content">can trust always</p>
-          <p class="text-sub">Ever feel like your household feels incomplete?</p>
-          <p class="text-sub">If yes, click on the button below to get started</p>
-          <button class="CTA">Shop</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Furniture</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+
+<body id="container">
+    <main style="position: relative;">
+        <div class="hero-section">
+            <nav>
+                <div class="logo">
+                    <div id="menu-button" class="menu-button" onclick="toggleMenu()">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                    </div>
+                    <img src="logo.png" alt="logo">
+                </div>
+                <div id="menu" class="menu-links menu-links__mobile">
+                    <ul>
+                        <li>
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Products">Products</a>
+                        </li>
+                        <li>
+                            <a href="#About">About</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <button class="Shop">Shop</button>
+                </div>
+            </nav>
         </div>
-      </section>
+        <section class="container">
+            <div style="width: 50svw;">
+                <h1 class="title">
+                    <span>Amazing</span>
+                    <span>Furniture you can trust always</span>
+                </h1>
+                <p class="text-sub">Ever feel like your household feels incomplete? If yes, click on the button below to get started</p>
+                <br> <button class="Shop">Shop Now</button>
+            </div>
+            <div style="width: 50svw; scale: 0.7;">
+                <img src="pngwing.com.png" alt="furniture">
+            </div>
+        </section>
+        <div id="Box" style="position: absolute;"></div>
     </main>
-  </body>
+    <footer>
+        <div class="footer-section">
+            <p>Me attempting to make a footer</p>
+        </div>
+    </footer>
+</body>
+
 </html>
