@@ -106,6 +106,7 @@ nav {
     border: none;
     border-radius: 0.85rem;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .logo {
